@@ -9,7 +9,7 @@ export default function ProductItem({ id, title, image, price, discont_price }) 
 
     const dispatch = useDispatch();
 
-   
+
 
     const discountPrc = discont_price
         ? Math.round(
@@ -20,9 +20,9 @@ export default function ProductItem({ id, title, image, price, discont_price }) 
 
     return (
         <div className={s.productContainer} >
-            
+
             <div className={s.imageContainer}>
-                <Link to={`/product/${id}`}>  <img src={`${URLIMAGE}${image}`} alt={title}  /> </Link>
+                <Link to={`/product/${id}`}>  <img src={`${URLIMAGE}${image}`} alt={title} /> </Link>
                 <button className={s.btn} onClick={() => dispatch(add(id))} >Add to cart</button>
             </div>
 
@@ -37,7 +37,7 @@ export default function ProductItem({ id, title, image, price, discont_price }) 
                     <div className={s.price}>
                         <p className={s.newPrice}>{price}</p>
                     </div>
-                )}          
+                )}
             </div>
             <div className={s.title}>{title}</div>
 

@@ -37,7 +37,6 @@ function App() {
         <Route path='/product/:id' element={<SingleProductPage />} />
         <Route path='/cart' element={<CartPage />} />
         <Route path='*' element={<Error />} />
-  
       </Routes>
 
       <Foot />

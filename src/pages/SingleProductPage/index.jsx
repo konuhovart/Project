@@ -52,7 +52,7 @@ export default function SingleProductPage() {
                                 </div>
                             )}
                             {!discount && <p className={s.Price}>{product.price}$</p>}
-                            <button className={s.btn}onClick={() => {dispatch(add(+id));}}>Add to cart</button>
+                           <div className={s.bttn}><button className={s.btn}onClick={() => {dispatch(add(+id));}}>Add to cart</button></div> 
                         </div>
                         <hr className={s.line} />
                         <div className={s.description}>

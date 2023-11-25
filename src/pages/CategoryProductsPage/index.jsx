@@ -24,7 +24,9 @@ export default function CategoryProductsPage() {
       <ProductFilter/>
       <div className={s.item}>
         {
-          result.map(product => <ProductItem key={product.id} {...product} />)
+          result
+          .filter(({show}) => Object.values (show).every(elem => elem))
+          .map(product => <ProductItem key={product.id} {...product} />)
         }
       </div>
     </Container>

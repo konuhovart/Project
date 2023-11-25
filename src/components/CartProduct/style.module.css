@@ -93,3 +93,13 @@
   padding-top: 13px;
 }
 
+@media(max-width:375px){
+
+  .item{
+    border-bottom: 1px #a7a7a7 solid;
+    padding: 0;
+    width: auto;
+    display: block;
+  }
+
+}

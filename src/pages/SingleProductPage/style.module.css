@@ -1,63 +1,98 @@
 .info {
-    display: flex;
-    gap: 20px;
-  }
-  .left {
-    margin: 30px;
-  }
-  .right {
-    margin: 30px;
-  }
-  .productImage img {
-    width: 710px;
-    height: 710px;
-    object-fit: contain;
-  }
-  
+  display: flex;
+  gap: 20px;
+}
+.left {
+  margin: 30px;
+}
+.right {
+  margin: 30px;
+}
+.productImage img {
+  width: 710px;
+  height: 710px;
+  object-fit: contain;
+}
 
-  .productPrice {
-    display: flex;
-    flex-direction: row;
+.productPrice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.newPrice {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.discountPrc {
+  color: #ff32a1;
+  font-size: 20px;
+}
+
+.btn {
+  margin: 20px 0;
+  background-color: #339933;
+  border: 2px solid #339933;
+  border-radius: 10px;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  height: 86px;
+  width: 341px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.line {
+  border: none;
+  border-top: 1px #c0c0c0 dashed;
+}
+
+@media (max-width: 375px) {
+  .info {
+    margin: 0;
     align-items: center;
-    gap: 50px;
-    justify-content: space-between;
+    justify-content: center;
   }
+}
+
+@media (max-width: 1420px) {
+  .info {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .bttn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .productImg img{
+    width: 100%;
   
-  .newPrice {
-    font-weight: 600;
-    font-size: 70px;
   }
-  
-  .oldPrice {
-    text-decoration: line-through;
-    color: grey;
-    font-weight: 500;
-    font-size: 20px;
+  .productImg {
+    align-items: center;
+    justify-content: center;
+    
   }
-  
-  .discountPrc {
-    color: #FF32A1;
-    font-size: 20px;
+}
+
+@media (max-width: 375px){
+  .productImg img{
+    width: 100%;
   }
-  
-  .btn{
-    margin:20px 0;
-    background-color: #339933;
-    border: 2px solid #339933;
-    border-radius: 10px;
-    color: white;
-    font-size: 28px;
-    font-weight: 700;
-    height: 86px;
-    width: 341px;
-    cursor: pointer;
-  }
-  
-  .description {
-    margin-top: 20px;
-    padding-top: 20px;
-  }
-  .line {
-    border: none;
-    border-top: 1px #C0C0C0 dashed;
-  }
+}

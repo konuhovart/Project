@@ -22,7 +22,6 @@ h2 {
 }
 .address a {
   font-size: 40px;
-  
 }
 .phone {
   font-size: 70px;
@@ -43,23 +42,27 @@ h2 {
   height: 525px;
 }
 
-@media(max-width:850px){
-  .phone{
+@media (max-width: 850px) {
+  .phone {
     font-size: 20px;
   }
-  .address a{
+  .address a {
     font-size: 20px;
   }
-  
-  .address{
+
+  .address {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-.foot{
-  display: flex;
-  align-items: center;
-
+  .foot {
+    display: flex;
+    align-items: center;
+  }
 }
+@media (max-width: 375px) {
+  .foot {
+    display: grid;
+    gap: 10px;
+  }
 }
-

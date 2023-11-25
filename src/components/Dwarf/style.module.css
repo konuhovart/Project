@@ -68,13 +68,28 @@
   font-size: 22px;
 }
 
-@media(max-width:1010px){
-  .dwarf{
+@media (max-width: 1010px) {
+  .dwarf {
     display: none;
   }
-  .discount{
+  .discount {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .input {
+    width: 50%;
+  }
+  .btn {
+    width: 64%;
+    height: 60%;
+  }
+  .right {
+    text-align: center;
+  }
+  .info {
+    align-items: center;
   }
 }

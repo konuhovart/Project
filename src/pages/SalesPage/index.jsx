@@ -20,7 +20,10 @@ export default function SalesPage() {
       <ProductFilter showCheckbox={false}/>
       <div className={s.item}>
         {
-          saleProducts.map(product => <ProductItem key={product.id} id={product.id} {...product} />)
+          
+          saleProducts
+          .filter(({show}) => Object.values (show).every(elem => elem))
+          .map(product => <ProductItem key={product.id} id={product.id} {...product} />)
         }
       </div>
     </Container>
