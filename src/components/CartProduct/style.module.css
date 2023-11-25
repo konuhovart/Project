@@ -1,0 +1,95 @@
+.item {
+  display: grid;
+  grid-template-columns: 200px 300px 1fr;
+  grid-auto-rows: auto;
+  border-bottom: 1px #a7a7a7 solid;
+  gap: 30px;
+  padding: 0;
+  width: 824px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  width: 300px;
+}
+.title p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.count {
+  border-radius: 14px;
+  border: solid black 1px;
+  width: 90px;
+  height: 30px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.count button {
+  border: 1px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 9px;
+  font-size: 20px;
+}
+.clear {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.newPrice span {
+  font-size: 20px;
+  padding-top: 5px;
+ 
+}
+.oldPrice span{
+  font-size: 20px;
+ 
+}
+.newPrice {
+  font-weight: 600;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.price p{
+ 
+  display: flex;
+  align-items: center;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 500;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  padding-top: 13px;
+}
+

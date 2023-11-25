@@ -1,0 +1,48 @@
+.container {
+  border: 2px black solid;
+  
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 7px;
+}
+.filter p {
+  font-size: 26px;
+  font-weight: 600;
+
+}
+.input {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  width: 103px;
+  height: 42px;
+}
+.sort {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  width: 219px;
+  height: 42px;
+}
+.check {
+  height: 40px;
+  width: 40px;
+  margin-right: 40px;
+}
+
+@media(max-width: 870px){
+  .input{
+   width: 70px;
+   
+  }
+  .filter{
+    gap: 10px
+  }
+  .filter p{
+    font-size: 20px;
+  }
+}

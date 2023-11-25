@@ -1,0 +1,28 @@
+
+.item{
+
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 318px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, max-content));
+  gap: 30px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.item img{
+  width: 318px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backbtn {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}

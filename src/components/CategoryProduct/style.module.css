@@ -1,0 +1,50 @@
+.item{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 318px;
+  height: 366px;
+}
+
+.item img{
+  width: 318px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+/* .item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, max-content));
+  gap: 30px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.img {
+  width: 318px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+} */

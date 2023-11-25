@@ -1,0 +1,65 @@
+.container {
+  height: 933px;
+}
+
+.foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  gap: 100px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.contact,
+.address {
+  flex: 1;
+}
+.address a {
+  font-size: 40px;
+  
+}
+.phone {
+  font-size: 70px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.aday {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hours {
+  font-size: 18px;
+}
+
+.map {
+  height: 525px;
+}
+
+@media(max-width:850px){
+  .phone{
+    font-size: 20px;
+  }
+  .address a{
+    font-size: 20px;
+  }
+  
+  .address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.foot{
+  display: flex;
+  align-items: center;
+
+}
+}
+
