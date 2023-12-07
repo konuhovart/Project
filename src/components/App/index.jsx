@@ -19,7 +19,7 @@ import Error from "../../components/Error";
 function App() {
 
   const dispatch = useDispatch();
-
+  // Загрузка категорий и продуктов после монтирования компонента
   useEffect(() => {
     dispatch(fetchCategory())
     dispatch(fetchProducts())

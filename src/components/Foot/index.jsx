@@ -19,7 +19,7 @@ export default function Foot() {
         <div className={s.address}>
           <div>
             <h2>Address</h2>
-            <a href="https://www.google.com/search?q=telranDE">
+            <a className={s.www}href="https://www.google.com/search?q=telranDE">
               Linkstrasse2, 8 OG, 10785,
               Berlin, Deutschland
             </a>

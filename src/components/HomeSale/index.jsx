@@ -9,13 +9,13 @@ import s from './style.module.css'
 export default function HomeSale() {
 
   const products = useSelector(({ product }) => product.list)
-
+  // Фильтрация товаров, у которых установлена скидка
   const saleProducts = products.filter((product) => product.discont_price !== null);
-  const saleView = saleProducts.slice(0, 3);
+  const saleView = saleProducts.slice(0, 3);  // Выбор первых трех товаров для отображения на странице
 
   return (
     <Container>
-      
+
       <h2>Sale</h2>
       <div className={s.sale}>
         {

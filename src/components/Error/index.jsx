@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '../../UI/Container'
 
-
 export default function Error() {
   return (
     <Container>

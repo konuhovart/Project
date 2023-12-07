@@ -20,6 +20,9 @@
   display: flex;
   gap: 60px;
 }
+.right a {
+  color: black;
+}
 
 .btn {
   border: 2px solid #339933;

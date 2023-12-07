@@ -9,24 +9,22 @@ import s from './style.module.css'
 
 
 export default function CategoryProductsPage() {
-
+  // параметры машрута (categoryId)
   const { categoryId } = useParams();
 
   const products = useSelector(({ product }) => product.list);
   const result = products.filter(products => products.categoryId === +categoryId);
- 
 
   return (
 
-
     <Container>
       <BackPage />
-      <ProductFilter/>
+      <ProductFilter />
       <div className={s.item}>
         {
           result
-          .filter(({show}) => Object.values (show).every(elem => elem))
-          .map(product => <ProductItem key={product.id} {...product} />)
+            .filter(({ show }) => Object.values(show).every(elem => elem))
+            .map(product => <ProductItem key={product.id} {...product} />)
         }
       </div>
     </Container>

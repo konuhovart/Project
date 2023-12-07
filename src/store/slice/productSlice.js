@@ -33,9 +33,8 @@ export const productSlice = createSlice({
       }
     },
 
-  
-
-    priceFilter(state, { payload }) {         //фильтрация цены
+    priceFilter(state, { payload }) {
+      //фильтрация цены
       state.list = state.list.map((elem) => {
         const discountedPrice =
           elem.discont_price && elem.discont_price < elem.price
@@ -73,7 +72,6 @@ export const productSlice = createSlice({
   },
 });
 
-export const { addToCart, order, priceFilter } =
-  productSlice.actions;
+export const { addToCart, order, priceFilter } = productSlice.actions;
 
 export default productSlice.reducer;

@@ -1,6 +1,5 @@
 .container {
   border: 2px black solid;
-  
 }
 
 .filter {
@@ -12,7 +11,6 @@
 .filter p {
   font-size: 26px;
   font-weight: 600;
-
 }
 .input {
   font-size: 16px;
@@ -34,26 +32,24 @@
   margin-right: 40px;
 }
 
-@media(max-width: 870px){
-  .input{
-   width: 70px;
-   
+@media (max-width: 870px) {
+  .input {
+    width: 70px;
   }
-  .filter{
-    gap: 10px
+  .filter {
+    gap: 10px;
   }
-  .filter p{
+  .filter p {
     font-size: 20px;
   }
 }
-
-@media(max-width: 375px){
-  .filter{
+@media (max-width: 610px) {
+  .filter {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
   }
-  .input{
-      width: 115px;
+  .input {
+    width: 115px;
   }
 }

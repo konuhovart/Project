@@ -17,13 +17,12 @@ export default function SalesPage() {
     <Container>
       <BackPage />
       <h2>Products with sale</h2>
-      <ProductFilter showCheckbox={false}/>
+      <ProductFilter showCheckbox={false} />
       <div className={s.item}>
         {
-          
           saleProducts
-          .filter(({show}) => Object.values (show).every(elem => elem))
-          .map(product => <ProductItem key={product.id} id={product.id} {...product} />)
+            .filter(({ show }) => Object.values(show).every(elem => elem))
+            .map(product => <ProductItem key={product.id} id={product.id} {...product} />)
         }
       </div>
     </Container>

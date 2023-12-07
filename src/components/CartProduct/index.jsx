@@ -17,7 +17,7 @@ export default function CartProduct({ id, image, title, discont_price, count, pr
                 </div>
                 <div className={s.title}>
                     <p>{title}</p>
-                    
+
                     <div className={s.count} >
                         <button onClick={() => dispatch(decr(id))} >-</button>
                         <p>{count}</p>
@@ -30,7 +30,7 @@ export default function CartProduct({ id, image, title, discont_price, count, pr
                         discont_price !== null
                             ? <p className={s.newPrice}>{discont_price * count} <span className={s.span}>$</span></p> : ' '
                     }
-                    <p className={discont_price ? s.oldPrice : ' '}>{price * count} <span className={s.span}>$</span></p>
+                    <p className={discont_price ? s.oldPrice : s.newPrice}>{price * count} <span className={s.span}>$</span></p>
                     <div><button className={s.clear} onClick={() => dispatch(clear(id))}>X</button></div>
                 </div>
             </div>

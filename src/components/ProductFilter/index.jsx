@@ -8,20 +8,20 @@ import s from './style.module.css'
 
 
 export default function ProductFilter({ showCheckbox }) {
-
+    //  хук useState для отслеживания состояния цены (минимальной и максимальной)
     const [price, setPrice] = useState({ min: 0, max: Infinity })
 
     const dispatch = useDispatch();
-
+    // хук useEffect для отправки данных фильтрации цены в Redux при изменении состояния price
     useEffect(() => {
         dispatch(priceFilter(price));
     }, [price, dispatch])
-
+    // Обработчики для изменения значения минимальной и максимальной цен
     const priceHandler = {
         min: value => +value,
         max: value => value === '' ? Infinity : +value
     }
-
+    // Функция изменения цены при вводе значения в input
     const changePrice = ({ target }) => {
         const { name, value } = target;
         setPrice(state => ({ ...state, [name]: priceHandler[name](value) }))
@@ -33,15 +33,10 @@ export default function ProductFilter({ showCheckbox }) {
         { id: 3, label: 'by price ->', value: 3 },
         { id: 4, label: 'by price <-', value: 4 },
     ]
-
+    // Обработчик для изменения порядка сортировки
     const orderHandler = (event) => {
         dispatch(order(+event.target.value));
     }
-    // const orderHandler = ({ value }) => {
-    //     dispatch(order(value));
-    // };
-
-
     return (
 
         <Container className={s.container}>
@@ -60,7 +55,6 @@ export default function ProductFilter({ showCheckbox }) {
                     placeholder='to'
                     onChange={changePrice} />
 
-
                 {showCheckbox && (
                     <>
                         <p>Discounted items</p>
@@ -75,7 +69,6 @@ export default function ProductFilter({ showCheckbox }) {
                                 }))} />
                     </>
                 )}
-
                 <p>Sorted</p>
                 <select className={s.sort} onChange={orderHandler}>
                     <option selected disabled >by default</option>

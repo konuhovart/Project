@@ -3,7 +3,7 @@ import CartProduct from '../../components/CartProduct';
 import { useCart } from '../../hooks/useCart';
 import CartCalc from '../../components/CartCalc';
 import Container from '../../UI/Container';
-import {  LuShovel } from 'react-icons/lu';
+import { LuShovel } from 'react-icons/lu';
 import s from './style.module.css'
 import { NavLink } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ export default function CartPage() {
     <Container>
       <div className={s.top}>
         <h2>Shopping cart</h2>
-        <div className={s.back}><NavLink  className={s.link} to={'/products/all'}>Back to the store <LuShovel className={s.shovel}/></NavLink></div>
+        <div className={s.back}><NavLink className={s.link} to={'/products/all'}>Back to the store <LuShovel className={s.shovel} /></NavLink></div>
       </div>
       <div className={s.cart}>
 

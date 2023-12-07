@@ -5,8 +5,6 @@ import BackPage from '../../UI/BackPage';
 import s from './style.module.css'
 
 import CategoryProduct from '../../components/CategoryProduct';
-
-
 export default function CategoryPage() {
 
   const { list } = useSelector((state) => state.category);
@@ -22,7 +20,6 @@ export default function CategoryPage() {
           }
         </div>
       }
-
     </Container>
   )
 }

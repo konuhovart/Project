@@ -64,11 +64,9 @@
 .newPrice span {
   font-size: 20px;
   padding-top: 5px;
- 
 }
-.oldPrice span{
+.oldPrice span {
   font-size: 20px;
- 
 }
 .newPrice {
   font-weight: 600;
@@ -77,8 +75,7 @@
   display: flex;
   margin-bottom: 20px;
 }
-.price p{
- 
+.price p {
   display: flex;
   align-items: center;
 }
@@ -93,13 +90,11 @@
   padding-top: 13px;
 }
 
-@media(max-width:375px){
-
-  .item{
+@media (max-width: 375px) {
+  .item {
     border-bottom: 1px #a7a7a7 solid;
     padding: 0;
     width: auto;
     display: block;
   }
-
 }

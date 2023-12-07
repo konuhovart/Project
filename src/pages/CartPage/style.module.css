@@ -1,4 +1,4 @@
-s.top{
+s.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,12 +10,10 @@ s.top{
   display: grid;
   grid-template-columns: 824px 496px;
   justify-content: space-between;
-
 }
 .left {
   display: flex;
   justify-content: space-between;
-  
 }
 .left img {
   border-radius: 21px;
@@ -35,37 +33,36 @@ s.top{
   padding-left: 20px;
 }
 
-s.noItem{
+s.noItem {
   width: 70%;
   height: 70%;
 }
-.back{
+.back {
   font-size: 20px;
   font-weight: 500;
   display: flex;
   justify-content: right;
   width: 824px;
 }
-.link{
+.link {
   text-decoration: none;
   display: flex;
   align-items: center;
   color: black;
- gap: 10px;
+  gap: 10px;
 }
-.shovel{
-  transform:rotate(45deg);
- margin-top: 6px;
+.shovel {
+  transform: rotate(45deg);
+  margin-top: 6px;
 }
 
-@media(max-width:1350px){
-  
- .cart{
-    display: flex; 
+@media (max-width: 1350px) {
+  .cart {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 40px;
- }
+  }
 }

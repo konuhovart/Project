@@ -55,16 +55,15 @@
 @media (max-width: 375px) {
   .order {
     align-items: center;
-    background-color: #F1FFF1
+    background-color: #f1fff1;
   }
-  .input{
+  .input {
     width: 226px;
   }
-  .btn{
+  .btn {
     width: auto;
   }
-  .totalSum{
+  .totalSum {
     padding: 5px;
-    
   }
 }

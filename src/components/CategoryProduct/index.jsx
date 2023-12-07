@@ -6,8 +6,6 @@ const URLIMAGE = "http://localhost:3333/";
 export default function CategoryProduct({ id, image, title }) {
 
   return (
-
-
     <Container>
       <div className={s.item}>
         <Link to={`/category/${id}`}>  <img src={`${URLIMAGE}${image}`} alt={title} /> </Link>

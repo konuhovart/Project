@@ -9,14 +9,11 @@ export default function ProductItem({ id, title, image, price, discont_price }) 
 
     const dispatch = useDispatch();
 
-
-
-    const discountPrc = discont_price
+    const discountPrc = discont_price// Вычисление процента скидки
         ? Math.round(
             ((price - discont_price) / price) * 100
         )
         : 0;
-
 
     return (
         <div className={s.productContainer} >
@@ -35,7 +32,7 @@ export default function ProductItem({ id, title, image, price, discont_price }) 
                     </div>
                 ) : (
                     <div className={s.price}>
-                        <p className={s.newPrice}>{price}</p>
+                        <p className={s.newPrice}>{price}$</p>
                     </div>
                 )}
             </div>

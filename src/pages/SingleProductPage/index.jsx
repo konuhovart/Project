@@ -33,8 +33,7 @@ export default function SingleProductPage() {
     return (
         <div>
             <Container>
-              <BackPage/>
-
+                <BackPage />
                 <div className={s.left}>
                     <h2>{product.title}</h2>
                 </div>
@@ -52,7 +51,7 @@ export default function SingleProductPage() {
                                 </div>
                             )}
                             {!discount && <p className={s.Price}>{product.price}$</p>}
-                           <div className={s.bttn}><button className={s.btn}onClick={() => {dispatch(add(+id));}}>Add to cart</button></div> 
+                            <div className={s.bttn}><button className={s.btn} onClick={() => { dispatch(add(+id)); }}>Add to cart</button></div>
                         </div>
                         <hr className={s.line} />
                         <div className={s.description}>

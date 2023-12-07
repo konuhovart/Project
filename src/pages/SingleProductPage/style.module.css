@@ -80,19 +80,17 @@
     align-items: center;
     justify-content: center;
   }
-   .productImg img{
+  .productImg img {
     width: 100%;
-  
   }
   .productImg {
     align-items: center;
     justify-content: center;
-    
   }
 }
 
-@media (max-width: 375px){
-  .productImg img{
+@media (max-width: 375px) {
+  .productImg img {
     width: 100%;
   }
 }

@@ -14,15 +14,12 @@ export default function DiscDwarf() {
         const newPost = await resp.json()
         console.log(newPost);
     }
-
     const submit = (event) => {
         event.preventDefault();
         const { phone } = event.target;
-
         const data = {
             phone: phone.value
         };
-
         fetchAdd(data);
         event.target.reset()
     }

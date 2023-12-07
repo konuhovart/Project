@@ -5,14 +5,11 @@ import { clearCart } from "../../store/slice/cartSlice";
 
 import s from './style.module.css'
 
-
-
 export default function CartCalc() {
 
     const dispatch = useDispatch();
 
-  
-
+    // Асинхронная функция для отправки данных заказа на сервер
     async function fetchAdd(data) {
         const resp = await fetch("http://localhost:3333/order/send", {
             method: 'POST',
@@ -22,16 +19,12 @@ export default function CartCalc() {
             },
         })
         const newPost = await resp.json()
-       
-
         if (newPost.status === "OK") {
-          dispatch(clearCart());
+          dispatch(clearCart()); // Если заказ успешен, очищаем корзину в Redux
         }
         alert('Thanks for your order!')
         console.log(newPost);
     }
-
-   
 
     const submit = (event) => {
         event.preventDefault();
@@ -39,13 +32,13 @@ export default function CartCalc() {
         const data = {
             phone: phone.value
         };
-
         fetchAdd(data);
-        event.target.reset()
+        event.target.reset()// Сбрасываем форму после отправки
         console.log(data);
     }
 
     const cart = useCart();
+     // Вычисляем общую сумму товаров в корзине
     const totalSum = cart.reduce((acc, { count, price, discont_price }) => {
         const productPrice = discont_price ? discont_price : price;
         return acc + (productPrice * count)
